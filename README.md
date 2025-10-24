@@ -50,7 +50,7 @@ Cluster đã được mở quyền truy cập từ mọi IP (`0.0.0.0/0`) để 
 
 ## 📝 Hướng dẫn sử dụng
 
- 1. Clone repo
+
 ```bash
 git clone https://github.com/tuongroth/note-app.git
 2. Cài đặt backend
