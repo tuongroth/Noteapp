@@ -14,6 +14,16 @@ Bạn có thể dùng tài khoản demo để đăng nhập và thử nghiệm a
 
 - **Email:** cattuong@gmail.com  
 - **Password:** 123
+---
+ ## Database Connection
+
+Ứng dụng kết nối với MongoDB Atlas qua connection string:
+
+mongodb+srv://note:Vi234567@cluster0.qfvpqsd.mongodb.net/note_app
+
+Cluster đã được mở quyền truy cập từ mọi IP (`0.0.0.0/0`) để có thể demo trực tiếp mà không cần đăng nhập Mongo Atlas.
+
+> ⚠️ Lưu ý: Connection này chỉ dùng cho mục đích học tập và demo, không khuyến khích dùng cho sản phẩm thật.
 
 ---
 ## 📸 Screenshot
