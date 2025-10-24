@@ -15,7 +15,6 @@
 
 ![Note](https://raw.githubusercontent.com/tuongroth/screenshot/main/assets/566541503_25101902219462482_7572061466488307056_n.png) 
 ![Filter](https://raw.githubusercontent.com/tuongroth/screenshot/main/567530658_1011659234430768_4771482287346755668_n.png) 
-![Register/Login](https://raw.githubusercontent.com/tuongroth/screenshot/main/assets/566227599_1117414187259524_8882231231178432045_n.png) 
 ![Extra](https://raw.githubusercontent.com/tuongroth/screenshot/main/assets/566537808_1164993755589124_8417382872247099959_n.png) 
 ![Register/Login Alt](https://raw.githubusercontent.com/tuongroth/screenshot/main/assets/566227599_1117414187259524_8882231231178432045_n%20(1).png)
 
