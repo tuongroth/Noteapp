@@ -77,9 +77,9 @@ const Login = () => {
           {/* Signup link */}
           <p className="text-center mt-4 text-sm">
             Don't have an account?{" "}
-            <a href="/register" className="text-blue-500 hover:underline">
-              Signup
-            </a>
+            <Link to="/register" className="text-blue-500 hover:underline">
+    Signup
+  </Link>
           </p>
         </form>
       </div>
