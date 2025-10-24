@@ -1,50 +1,44 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { useNavigate } from "react-router-dom"; // ✅ import useNavigate
+import { useAuth } from "../context/ContextProvider";
 
-const Signup = () => {
-  const [name, setName] = useState("");
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-  const navigate = useNavigate(); // ✅ initialize navigate
+  const navigate = useNavigate();
+  const { login } = useAuth(); // get login function from context
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/register",
-        { name, email, password }
+        "http://localhost:5000/api/auth/login",
+        { email, password }
       );
 
-      console.log("✅ Registration successful:", response.data);
+      if (response.data.success) {
+        // Update context with logged-in user
+        login(response.data.user);
 
-      // ✅ Navigate to login page after successful signup
-      navigate("/login");
+        // Optionally store token
+        localStorage.setItem("token", response.data.token);
+
+        // Redirect to home
+        navigate("/");
+      }
     } catch (error) {
-      console.error("❌ Registration failed:", error);
+      console.log(error);
+      alert("Login failed. Please check your credentials.");
     }
   };
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div className="border shadow p-6 w-80 bg-white rounded-lg">
-        <h2 className="text-2xl font-bold mb-4 text-center">Signup</h2>
+        <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
 
         <form onSubmit={handleSubmit}>
-          {/* Name */}
-          <div className="mb-4">
-            <label className="block text-gray-700 mb-1">Name</label>
-            <input
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
-              placeholder="Enter username"
-            />
-          </div>
-
           {/* Email */}
           <div className="mb-4">
             <label className="block text-gray-700 mb-1">Email</label>
@@ -54,6 +48,7 @@ const Signup = () => {
               onChange={(e) => setEmail(e.target.value)}
               className="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
               placeholder="Enter email"
+              required
             />
           </div>
 
@@ -66,6 +61,7 @@ const Signup = () => {
               onChange={(e) => setPassword(e.target.value)}
               className="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
               placeholder="Enter password"
+              required
             />
           </div>
 
@@ -74,14 +70,14 @@ const Signup = () => {
             type="submit"
             className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition"
           >
-            Signup
+            Login
           </button>
 
-          {/* Login link */}
+          {/* Signup link */}
           <p className="text-center mt-4 text-sm">
-            Already have an account?{" "}
-            <a href="/login" className="text-blue-500 hover:underline">
-              Login
+            Don't have an account?{" "}
+            <a href="/signup" className="text-blue-500 hover:underline">
+              Signup
             </a>
           </p>
         </form>
@@ -90,4 +86,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Login;
