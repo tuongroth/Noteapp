@@ -56,3 +56,7 @@ Backend: Node.js, Express
 Database: MongoDB (hoặc mock API)
 
 Thư viện khác: Axios, LocalStorage
+
+npm install -D tailwindcss@3 postcss autoprefixer
+npx tailwindcss init -p
+
