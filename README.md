@@ -5,12 +5,17 @@
 ---
 
 ## 🔗 Link
+**Frontend:** [https://notea-8f1x.onrender.com/](https://notea-8f1x.onrender.com/)  
+**Backend:** [https://noteapp-1-1ehg.onrender.com/](https://noteapp-1-1ehg.onrender.com/)
+---
+## 👤 Tài khoản demo
 
-- **Frontend:** [https://noteapw.onrender.com/](https://noteapw.onrender.com/)  
-- **Backend:** [https://noteapp-1-1ehg.onrender.com/](https://noteapp-1-1ehg.onrender.com/)
+Bạn có thể dùng tài khoản demo để đăng nhập và thử nghiệm app:  
+
+- **Email:** cattuong@gmail.com  
+- **Password:** 123
 
 ---
-
 ## 📸 Screenshot
 
 ![Note](https://raw.githubusercontent.com/tuongroth/screenshot/main/assets/566541503_25101902219462482_7572061466488307056_n.png) 
@@ -19,6 +24,7 @@
 ![Register/Login Alt](https://raw.githubusercontent.com/tuongroth/screenshot/main/assets/566227599_1117414187259524_8882231231178432045_n%20(1).png)
 
 ---
+
 
 ## ⚙️ Tính năng
 
