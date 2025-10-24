@@ -27,7 +27,8 @@ const ContextProvider = ({ children }) => {
         const token = localStorage.getItem("token");
         if (!token) return setUser(null);
 
-        const res = await axios.get("http://localhost:5000/api/auth/verify", {
+        const res = await axios.get("https://noteapp-2wye.onrender.com/api/auth/verify"
+, {
           headers: { Authorization: `Bearer ${token}` },
         });
 

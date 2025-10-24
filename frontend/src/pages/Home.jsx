@@ -15,7 +15,7 @@ const Home = () => {
   const fetchNotes = async () => {
     try {
       const token = localStorage.getItem("token");
-      const { data } = await axios.get("http://localhost:5000/api/notes", {
+      const { data } = await axios.get("https://noteapp-2wye.onrender.com/api/notes", {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (data.success) {
@@ -48,7 +48,7 @@ const Home = () => {
       if (currentNote) {
         // Edit note
         const { data } = await axios.put(
-          `http://localhost:5000/api/note/${currentNote._id}`,
+          `https://noteapp-2wye.onrender.com/api/note/${currentNote._id}`,
           { title, description },
           { headers: { Authorization: `Bearer ${token}` } }
         );
@@ -63,7 +63,7 @@ const Home = () => {
       } else {
         // Add new note
         const { data } = await axios.post(
-          "http://localhost:5000/api/note/add",
+          "https://noteapp-2wye.onrender.com/api/note/add",
           { title, description },
           { headers: { Authorization: `Bearer ${token}` } }
         );
@@ -83,7 +83,7 @@ const Home = () => {
   const deleteNote = async (id) => {
     try {
       const token = localStorage.getItem("token");
-      await axios.delete(`http://localhost:5000/api/note/${id}`, {
+      await axios.delete(`https://noteapp-2wye.onrender.com/api/note/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setNotes((prevNotes) => prevNotes.filter((note) => note._id !== id));

@@ -13,7 +13,8 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://noteapp-2wye.onrender.com/api/auth/login"
+,
         { email, password }
       );
 
@@ -76,7 +77,7 @@ const Login = () => {
           {/* Signup link */}
           <p className="text-center mt-4 text-sm">
             Don't have an account?{" "}
-            <a href="/signup" className="text-blue-500 hover:underline">
+            <a href="/register" className="text-blue-500 hover:underline">
               Signup
             </a>
           </p>
