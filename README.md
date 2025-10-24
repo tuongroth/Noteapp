@@ -9,15 +9,13 @@ Frontend: https://noteapw.onrender.com/
 Backend: https://noteapp-1-1ehg.onrender.com/
 
 📸 Screenshot
+![Register/Login](https://raw.githubusercontent.com/tuongroth/screenshot/main/assets/566227599_1117414187259524_8882231231178432045_n.png)
 
-Register & Login:
-https://raw.githubusercontent.com/tuongroth/screenshot/main/assets/566227599_1117414187259524_8882231231178432045_n.png
 
-Notes List / Edit / Delete:
-https://raw.githubusercontent.com/tuongroth/screenshot/main/assets/566541503_25101902219462482_7572061466488307056_n.png
+![Note](https://raw.githubusercontent.com/tuongroth/screenshot/main/assets/566541503_25101902219462482_7572061466488307056_n.png)
 
-Filter Notes by Emo:
-https://raw.githubusercontent.com/tuongroth/screenshot/main/567530658_1011659234430768_4771482287346755668_n.png
+![Filter](https://raw.githubusercontent.com/tuongroth/screenshot/main/567530658_1011659234430768_4771482287346755668_n.png)
+
 ⚙️ Tính năng
 
 Đăng ký & Đăng nhập: Tạo tài khoản mới và đăng nhập để sử dụng app.
